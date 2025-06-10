@@ -129,14 +129,14 @@ a:hover {
 .caixa_maior{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-width: 100vh;
+    max-width: 90%;
     gap: 30px;
 }
 
 .fotos_img{
     width: 100%;
     height: 300px;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .caixa_interna{
@@ -158,17 +158,17 @@ a:hover {
 
 .cards{
     display: none;
-    position: absolute;
+    position: absolute end;
     top: 12px;
     right: 12px;
     margin-left: 10px;
-    width: 140px;
+    width: 100%;
     text-align: center;
     background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    border: 1px auto #ddd;
     padding: 5px;
     border-radius: 4px;
-    max-width: 200px;
+    max-width: 100%;
     font-family: "Roboto Mono", monospace;
     font-size: 24px;
     color: #333;
@@ -185,7 +185,7 @@ a:hover {
 .sobre_info{
     background-color: rgba(255, 255, 255, 0.533);
     border: 5px solid #161616;
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,27 +210,30 @@ a:hover {
 }
 
 .footer {
-    color: #161616;
+    color: #dce307;
+    border-radius: 2px white;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     border-top: 5px solid #161616;
     padding-top: 20px;
 }
 
 .footer_titulo {
-    font-size: 25px;
+    border-radius: 2px;
+    border: 2px white;
+    font-size: 40px;
 }
 
 .footer.texto {
-    color: #333;
-    font-size: 16px;
+    color: #a3830f;
+    font-size: 20px;
 }
 
 .footer.detalhe {
-    font-size: 14px;
-    align-self: flex-end;
+    font-size: 20px;
+    align-self: flex;
     color: rgb(175,175,175);
 }
