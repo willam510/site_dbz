@@ -2,63 +2,65 @@ body {
     font-family: "roboto mono", monospace;
     height: 100vh;
     background-color: #597074;
-    background-image: url(https://wallpaperaccess.com/full/9794.jpg);
+    background-image: url("https://wallpaperaccess.com/full/9794.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     color: #161616;
 }
 
-.logo {
-    max-width: 60px;
-    padding-left: 0px;
-}
 
-header {
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    position: fixed;
-    top: 0;
-    background-image: url(https://wallpaperaccess.com/full/9794.jpg);
-    background-attachment: fixed;
-    width: 100%;
-    border-bottom: 5px solid #161616;
-    color: #db9137;
-    z-index: 999;
-}
-
-.lista_navegacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+    padding-left: 100px;
     padding-right: 20px;
+    background-image: url("https://www.gamerguides.com/assets/guides/191/DBZ_KAROK_2_wp.jpg");
+    background-size: cover;
+    border-bottom: 5px solid #161616;
+
+    .cabecalho_logo{
+        max-width: 60px;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
 }
 
-.lista_navegacao a {
-    color: #db9137;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 30px;
-    transition: 0.2s ease-in-out;
+.cabecalho_lista{
+    display: flex;
+    gap: 20px;
+    a{
+        color: #db9137;
+        font-weight: bold;
+        font-size: 26px;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            color: #161616;
+            text-decoration: underline;
+        }
+    }
 }
 
-.lista_navegacao a:hover {
-    text-decoration: underline;
-    color: #161616;
-}
+
+
 
 button:hover, 
 a:hover {
-    cursor: url(https://i.pinimg.com/originals/e1/58/1a/e1581a6ecc6d0508a6d421e0876b60d4.png), auto;
+    cursor: url("https://i.pinimg.com/originals/e1/58/1a/e1581a6ecc6d0508a6d421e0876b60d4.png"), auto;
 }
 
 .home{
     padding-top: 50px;
     height: 100vh;
-    background-image: url(https://cdn.wallpapersafari.com/33/69/kSPvFj.jpg);
+    background-image: url("https://cdn.wallpapersafari.com/33/69/kSPvFj.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
