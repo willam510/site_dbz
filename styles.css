@@ -1,17 +1,18 @@
+/* =================GERAL======================== */
+
 body {
     font-family: "roboto mono", monospace;
-    height: 100vh;
     background-color: #597074;
     background-image: url("https://wallpaperaccess.com/full/9794.jpg");
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: #161616;
 }
 
+/* =================CABEÇALHO======================== */
 
-
-.cabecalho {
+.cabecalho{
     position: fixed;
     top: 0;
     width: 100%;
@@ -21,8 +22,7 @@ body {
     padding: 10px 0;
     padding-left: 100px;
     padding-right: 20px;
-    background-image: url("https://www.gamerguides.com/assets/guides/191/DBZ_KAROK_2_wp.jpg");
-    background-size: cover;
+    background-image: url("https://wallpaperaccess.com/full/9794.jpg");
     border-bottom: 5px solid #161616;
 
     .cabecalho_logo{
@@ -32,210 +32,169 @@ body {
             transform: scale(1.2);
         }
     }
-}
+    }
 
-.cabecalho_lista{
-    display: flex;
-    gap: 20px;
-    a{
-        color: #db9137;
-        font-weight: bold;
-        font-size: 26px;
-        transition: 0.3s ease-in-out;
-        &:hover{
+    .cabecalho_lista{
+        display: flex;
+        gap: 20px;
+        a{
+            color: #db9137;
+            font-weight: bold;
+            font-size: 26px;
+            transition: 0.3s ease-in-out;
+            &:hover{
             color: #161616;
             text-decoration: underline;
+            }
+        }
+}
+
+
+/* =================HOME======================== */
+
+.hero{
+    background-image: url("https://cdn.wallpapersafari.com/33/69/kSPvFj.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        background-color: #cacaca;
+        font-family: "Bangers", system-ui;
+        color: rgb(1, 78, 78);
+        padding: 25px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 26px;
+        }
+        a{
+            background-color: #db9137;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-size: 26px;
+            border: 3px solid #cacaca;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                border: 3px solid #161616;
+            }
         }
     }
 }
 
 
 
+/* =================FOTOS======================== */
 
-button:hover, 
-a:hover {
-    cursor: url("https://i.pinimg.com/originals/e1/58/1a/e1581a6ecc6d0508a6d421e0876b60d4.png"), auto;
-}
-
-.home{
-    padding-top: 50px;
-    height: 100vh;
-    background-image: url("https://cdn.wallpapersafari.com/33/69/kSPvFj.jpg");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home_info{
-    background-color: rgb(202, 202, 202);
-    padding: 30px;
-    border-radius: 20px;
-    color: rgb(1, 78, 78);
-    font-family: "Bangers", system-ui;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.info_texto{
-    font-size: 24px;
-}
-
-.info_titulo{
-    font-size: 36px;
-}
-
-.info_botao{
-    text-decoration: none;
-    background-color: #5a747f;
-    color: #040000;
-
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 28px;
-    border-radius: 20px;
-    transition: 0.3s ease-in-out;
-}
-
-.info_botao:hover{
-    transform: scale(1.01);
-    color: #141414;
-    background-color: #db9137;
-    text-decoration: underline;
-}
 
 .fotos{
-    color: #161616;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 30px;
+    gap: 20px;
     padding: 100px 0;
     border-top: 5px solid #161616;
-    border-bottom: 5px solid #161616;
-}
-
-.fotos_titulo{
-    font-size: 45px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    font-family: "Bangers", system-ui;
-    letter-spacing: 4px;
-}
-
-.caixa_maior{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 90%;
-    gap: 30px;
-}
-
-.fotos_img{
-    width: 100%;
-    height: 300px;
-    border-radius: 30px;
-}
-
-.caixa_interna{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    padding: 5px;
-    transition: 0.5s ease-in-out;
-}
-
-.caixa_interna{
-    position: relative;
-    margin: 10px;
-}
-
-.cards{
-    display: none;
-    position: absolute end;
-    top: 12px;
-    right: 12px;
-    margin-left: 10px;
-    width: 100%;
-    text-align: center;
-    background-color: #f8f8f8;
-    border: 1px auto #ddd;
-    padding: 5px;
-    border-radius: 4px;
     max-width: 100%;
-    font-family: "Roboto Mono", monospace;
-    font-size: 24px;
-    color: #333;
+    overflow: hidden;
+    h2{
+        color: #161616;
+        font-family: "Bangers", system-ui;
+        font-size: 48px;
+    }
+    ul{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 20px;
+        li{
+            border-radius: 15px;
+            border: 5px solid white;
+            padding: 8px;
+            transition: 0.5s ease-in-out;
+            &:hover{
+                transform: scale(1.05);
+            }
+        img{
+            max-width: 100%;
+            width: 100%;
+            height: 300px;
+            border-radius: 15px;
+            display: block;
+        }
+        }
+    }
+
 }
 
-.caixa_interna:hover .cards{
-    display: block;
+
+/* =================SOBRE======================== */
+
+
+.sobre{
+    padding: 100px 0;
+    border-top: 5px solid #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        background-color: rgba(255, 255, 255, 0.55);
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px;
+        border-radius: 15px;
+        border: 4px solid #161616;
+        h2{
+            color: #161616;
+            font-family: "Bangers", system-ui;
+            font-size: 48px;
+        }
+        p{
+            font-size: 18px;
+            text-align: center;
+            line-height: 2;
+        }
+    }
 }
 
-.caixa_interna:hover{
-    transform: scale(1.1);
-}
 
-.sobre_info{
-    background-color: rgba(255, 255, 255, 0.533);
-    border: 5px solid #161616;
-    max-width: 900px;
+
+/* =================RODAPÉ======================== */
+
+
+.rodape{
+    padding-top: 30px;
+    border-top: 5px solid #161616;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
-    padding: 25px;
-    border-radius: 20px;
-}
-
-.sobre_titulo{
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-family: "Bangers", system-ui;
-    letter-spacing: 4px;
-}
-
-.sobre_texto {
-    text-align: end;
-    line-height: 1.6;
-    font-size: 18px;
-}
-
-.footer {
-    color: #dce307;
-    border-radius: 2px white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
-    border-top: 5px solid #161616;
-    padding-top: 20px;
-}
-
-.footer_titulo {
-    border-radius: 2px;
-    border: 2px white;
-    font-size: 40px;
-}
-
-.footer.texto {
-    color: #a3830f;
-    font-size: 20px;
-}
-
-.footer.detalhe {
-    font-size: 20px;
-    align-self: flex;
-    color: rgb(175,175,175);
+    gap: 15px;
+    .escola{
+        color: #db9137;
+        font-size: 35px;
+    }
+    .site{
+        color: #cacaca;
+        font-size: 20px;
+    }
+    .autor{
+        color: #cacaca;
+        font-size: 18px;
+        align-self: flex-end;
+    }
 }
